@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eNotes</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/main.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+</head>
+<body>
+
+    <!-- Colunas -->
+    <div class="row">
+        <!-- Lista de notas -->
+        <div class="col m3 teal darken-3 white-text z-depth-4 lateral-itens" style="height: 100vh;">
+            <div class="logo">
+                eNotes
+            </div>
+            <!-- Collections    ---->
+            <div class="list-itens collection">
+                Nenhuma anotação.
+            </div>
+        </div>
+
+
+        <!-- Campos de texto -->
+
+        <div class="col s9 m9">
+            <!-- Título da nota -->
+            <div class="input-field">
+                <label for="name">Título</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <!-- Conteúdo da nota -->
+            <div class="input-field">
+                <label for="content">Conteúdo</label>
+                <textarea type="text" class="materialize-textarea" id="content" required></textarea>
+            </div>
+
+            <!-- Ações      -->
+            <div class="right-align">
+                <a class="waves-effect waves-light btn teal darken-3"
+                onclick="saveNote()">
+                    <i class="material-icons left">save</i>Salvar
+                </a>
+                <a class="waves-effect waves-light btn teal darken-3"
+                onclick="deleteNote()">
+                    <i class="material-icons left">delete</i>Excluir
+                </a>
+                <a class="waves-effect waves-light btn teal darken-3" onclick="newNote()">
+                    <i class="material-icons left">note_add</i>Novo
+                </a>
+
+            </div>
+
+
+        </div>
+    </div>
+
+<script>
+    getValues()
+</script>
+
+
+</body>
+</html>

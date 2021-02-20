@@ -1,0 +1,58 @@
+.row .col{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.list-itens{
+    overflow-y: scroll;
+    height: 90%;
+    border: solid rgb(233, 233, 233) 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.row{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+textarea{
+    border: solid grey 1px;
+    background: rgb(247, 247, 247) !important;
+    height: 60vh !important;
+    text-align: justify;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+
+.modal-content div{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.modal-content div i{
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.color-pick{
+    width: 40px !important;
+    height: 40px;
+    border: solid white 1px;
+    display: inline-block;
+}
